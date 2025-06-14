@@ -1,6 +1,9 @@
+*{
+    font-family: Roboto, sans-serif;
+}
+
 body {
     margin: 0;
-    font-family: Roboto, sans-serif;
 }
 
 .container {
@@ -69,7 +72,9 @@ p {
     font-weight: 900;
 }
 
-.content p {
+.content p,
+.cta-card-content h5,
+p {
     font-size: 18px;
     line-height: 24px;
     color: #F9FAF8;
@@ -98,7 +103,7 @@ button a {
 }
 
 .random-info {
-    min-height: 85vh;
+    min-height: 75vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -118,11 +123,12 @@ button a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    
 }
 
 .card p {
-    /* font-size: 18px; */
+    text-align: center;
+    font-size: 16px;
     font-weight: 500;
     color: #1F2937;
 }
@@ -137,38 +143,76 @@ button a {
 
 .quote {
     background-color: #E5E7EB;
-    min-height: 45vh;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .the-quote {
     height: 24em;
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+}
+.quote blockquote {
+    font-size: 36px;
+    font-style: italic;
+    font-weight: 100;
+    color: #1F2937;
+}
+
+.quote p {
+    font-weight: 900;
+    color: #1F2937;
+    margin-left: 55%;
+}
+
+.cta {
+    min-height: 35vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.quote blockquote {
-    font-size: 36px;
-    font-style: italic;
-    font-weight: 200;
-    color: #1F2937;
-    text-align: start;
-}
-
-.quote p {
-    font-weight: 900;
-}
-
-.cta {
-    min-height: 45vh;
-}
 
 .cta-card {
     background-color: #3882F6;
-    padding: 12px 32px;
+    height: 125px;
+    width: 75em;
+    padding: 12px 48px;
     border-radius: 8px;
-    margin-top: 48px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.cta-card-content h5,
+p {
+    margin: 2px 0;
+    text-align: start;
+}
+
+.cta #cta-btn {
+    border: 3px solid #FFFFFF;
+    margin: 0;
+}
+
+footer {
+    height: 5em;
+    background-color: #1F2937;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer p {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
 }
